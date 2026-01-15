@@ -14,6 +14,7 @@ import {
   Sofa,
   Shield,
   Truck,
+  Sparkles,
   ArrowRight,
   CheckCircle2
 } from "lucide-react";
@@ -63,6 +64,11 @@ const serviceData = [
     icon: Truck,
     key: "moving",
     featuresKeys: ["packing", "transport", "disassembly", "assembly"],
+  },
+  {
+    icon: Sparkles,
+    key: "cleaning",
+    featuresKeys: ["regular", "deep", "windows", "postConstruction"],
   },
 ];
 

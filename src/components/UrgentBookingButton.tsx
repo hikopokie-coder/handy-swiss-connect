@@ -9,6 +9,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
 const UrgentBookingButton = () => {
   const { t } = useTranslation();
@@ -31,6 +32,7 @@ const UrgentBookingButton = () => {
     t("contact.services.carpentry"),
     t("contact.services.furniture"),
     t("contact.services.renovation"),
+    t("contact.services.cleaning"),
     t("contact.services.other"),
   ];
 
@@ -38,23 +40,40 @@ const UrgentBookingButton = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const { error } = await supabase.functions.invoke('send-booking-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: formData.service,
+          date: formData.date,
+          message: formData.message,
+          urgent: true
+        }
+      });
 
-    toast.success(t("urgent.success"), {
-      description: t("urgent.successDescription"),
-    });
+      if (error) throw error;
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      date: "",
-      message: "",
-    });
-    setIsSubmitting(false);
-    setIsOpen(false);
+      toast.success(t("urgent.success"), {
+        description: t("urgent.successDescription"),
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        date: "",
+        message: "",
+      });
+      setIsOpen(false);
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error("Error sending request");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (

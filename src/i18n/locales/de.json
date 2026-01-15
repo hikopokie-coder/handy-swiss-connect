@@ -26,7 +26,7 @@
     "title": "Umfassende Lösungen für Ihr Zuhause",
     "description": "Wir bieten ein breites Spektrum an Reparatur- und Wartungsdiensten für Ihr Zuhause. Jedes Projekt wird mit höchster Qualität ausgeführt.",
     "viewAll": "Alle Dienstleistungen",
-    "items": {
+"items": {
       "repair": {
         "title": "Allgemeine Reparaturen",
         "description": "Kleine und mittlere Reparaturen, Möbelmontage, Regale und Bilder aufhängen"
@@ -62,9 +62,13 @@
       "moving": {
         "title": "Umzugsdienste",
         "description": "Umzugshilfe: Verpackung, Transport, Möbelmontage/-demontage"
+      },
+      "cleaning": {
+        "title": "Wohnungsreinigung",
+        "description": "Professionelle Reinigung von Wohnungen jeder Komplexität. Regelmässige und Grundreinigung"
       }
     },
-    "features": {
+"features": {
       "ikea": "IKEA-Möbel",
       "curtains": "Gardineninstallation",
       "shelves": "Regale aufhängen",
@@ -98,7 +102,11 @@
       "packing": "Verpackung",
       "transport": "Transport",
       "disassembly": "Demontage",
-      "assembly": "Montage vor Ort"
+      "assembly": "Montage vor Ort",
+      "regular": "Regelmässige Reinigung",
+      "deep": "Grundreinigung",
+      "windows": "Fensterreinigung",
+      "postConstruction": "Nach Bauarbeiten"
     },
     "pricing": {
       "from": "ab",
@@ -167,7 +175,7 @@
       "dec1": "1. Dezember 2023"
     }
   },
-  "gallery": {
+"gallery": {
     "title": "Arbeitsgalerie",
     "description": "Sehen Sie Beispiele unserer Projekte. Jede Arbeit wird mit Liebe zum Detail und Schweizer Qualität ausgeführt.",
     "categories": {
@@ -177,7 +185,9 @@
       "terraces": "Terrassen",
       "painting": "Anstrich",
       "electrical": "Elektrik",
-      "furniture": "Möbel"
+      "furniture": "Möbel",
+      "cleaning": "Reinigung",
+      "plumbing": "Sanitär"
     },
     "items": {
       "bathroom": "Badezimmer-Renovierung",
@@ -185,7 +195,10 @@
       "terrace": "Terrassenbau",
       "painting": "Wohnzimmeranstrich",
       "electrical": "Beleuchtungsinstallation",
-      "furniture": "Möbelmontage"
+      "furniture": "Möbelmontage",
+      "cleaning": "Wohnungsreinigung",
+      "livingRoom": "Wohnzimmer-Renovierung",
+      "plumbing": "Sanitärarbeiten"
     },
     "locations": {
       "zurich": "Zürich",
@@ -234,7 +247,7 @@
       "success": "Anfrage gesendet!",
       "successDescription": "Wir kontaktieren Sie innerhalb von 30 Minuten."
     },
-    "services": {
+"services": {
       "repair": "Allgemeine Reparaturen",
       "painting": "Malerarbeiten",
       "electrical": "Elektrik",
@@ -242,6 +255,7 @@
       "carpentry": "Schreinerarbeiten",
       "furniture": "Möbelmontage",
       "renovation": "Renovierung",
+      "cleaning": "Wohnungsreinigung",
       "other": "Sonstiges"
     },
     "map": "Hier wird die Karte angezeigt"
