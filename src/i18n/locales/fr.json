@@ -26,7 +26,7 @@
     "title": "Solutions complètes pour votre maison",
     "description": "Nous offrons une large gamme de services de réparation et d'entretien. Chaque projet est réalisé avec la plus haute qualité.",
     "viewAll": "Tous les Services",
-    "items": {
+"items": {
       "repair": {
         "title": "Réparations Générales",
         "description": "Petites et moyennes réparations, montage de meubles, fixation d'étagères et de tableaux"
@@ -62,9 +62,13 @@
       "moving": {
         "title": "Services de Déménagement",
         "description": "Aide au déménagement: emballage, transport, montage/démontage de meubles"
+      },
+      "cleaning": {
+        "title": "Nettoyage d'Appartement",
+        "description": "Nettoyage professionnel d'appartements de toute complexité. Nettoyage régulier et en profondeur"
       }
     },
-    "features": {
+"features": {
       "ikea": "Meubles IKEA",
       "curtains": "Installation de rideaux",
       "shelves": "Fixation d'étagères",
@@ -98,7 +102,11 @@
       "packing": "Emballage",
       "transport": "Transport",
       "disassembly": "Démontage",
-      "assembly": "Montage sur place"
+      "assembly": "Montage sur place",
+      "regular": "Nettoyage régulier",
+      "deep": "Nettoyage en profondeur",
+      "windows": "Nettoyage de vitres",
+      "postConstruction": "Après travaux"
     },
     "pricing": {
       "from": "dès",
@@ -167,7 +175,7 @@
       "dec1": "1er décembre 2023"
     }
   },
-  "gallery": {
+"gallery": {
     "title": "Galerie de Travaux",
     "description": "Découvrez des exemples de nos projets. Chaque travail est réalisé avec attention aux détails et qualité suisse.",
     "categories": {
@@ -177,7 +185,9 @@
       "terraces": "Terrasses",
       "painting": "Peinture",
       "electrical": "Électricité",
-      "furniture": "Meubles"
+      "furniture": "Meubles",
+      "cleaning": "Nettoyage",
+      "plumbing": "Plomberie"
     },
     "items": {
       "bathroom": "Rénovation salle de bain",
@@ -185,7 +195,10 @@
       "terrace": "Construction terrasse",
       "painting": "Peinture salon",
       "electrical": "Installation éclairage",
-      "furniture": "Montage meubles"
+      "furniture": "Montage meubles",
+      "cleaning": "Nettoyage d'appartement",
+      "livingRoom": "Rénovation salon",
+      "plumbing": "Travaux de plomberie"
     },
     "locations": {
       "zurich": "Zurich",
@@ -234,7 +247,7 @@
       "success": "Demande envoyée!",
       "successDescription": "Nous vous contacterons sous 30 minutes."
     },
-    "services": {
+"services": {
       "repair": "Réparations générales",
       "painting": "Travaux de peinture",
       "electrical": "Électricité",
@@ -242,6 +255,7 @@
       "carpentry": "Menuiserie",
       "furniture": "Montage de meubles",
       "renovation": "Rénovation",
+      "cleaning": "Nettoyage d'appartement",
       "other": "Autre"
     },
     "map": "La carte sera ici"

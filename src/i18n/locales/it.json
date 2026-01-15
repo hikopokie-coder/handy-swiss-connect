@@ -26,7 +26,7 @@
     "title": "Soluzioni complete per la tua casa",
     "description": "Offriamo una vasta gamma di servizi di riparazione e manutenzione. Ogni progetto viene realizzato con la massima qualità.",
     "viewAll": "Tutti i Servizi",
-    "items": {
+"items": {
       "repair": {
         "title": "Riparazioni Generali",
         "description": "Piccole e medie riparazioni, montaggio mobili, appendere mensole e quadri"
@@ -62,9 +62,13 @@
       "moving": {
         "title": "Servizi Trasloco",
         "description": "Assistenza trasloco: imballaggio, trasporto, montaggio/smontaggio mobili"
+      },
+      "cleaning": {
+        "title": "Pulizia Appartamento",
+        "description": "Pulizia professionale di appartamenti di qualsiasi complessità. Pulizia regolare e profonda"
       }
     },
-    "features": {
+"features": {
       "ikea": "Mobili IKEA",
       "curtains": "Installazione tende",
       "shelves": "Appendere mensole",
@@ -98,7 +102,11 @@
       "packing": "Imballaggio",
       "transport": "Trasporto",
       "disassembly": "Smontaggio",
-      "assembly": "Montaggio in loco"
+      "assembly": "Montaggio in loco",
+      "regular": "Pulizia regolare",
+      "deep": "Pulizia profonda",
+      "windows": "Pulizia vetri",
+      "postConstruction": "Dopo lavori"
     },
     "pricing": {
       "from": "da",
@@ -167,7 +175,7 @@
       "dec1": "1 dicembre 2023"
     }
   },
-  "gallery": {
+"gallery": {
     "title": "Galleria Lavori",
     "description": "Guarda esempi dei nostri progetti. Ogni lavoro è eseguito con attenzione ai dettagli e qualità svizzera.",
     "categories": {
@@ -177,7 +185,9 @@
       "terraces": "Terrazze",
       "painting": "Pittura",
       "electrical": "Elettricità",
-      "furniture": "Mobili"
+      "furniture": "Mobili",
+      "cleaning": "Pulizia",
+      "plumbing": "Idraulica"
     },
     "items": {
       "bathroom": "Ristrutturazione bagno",
@@ -185,7 +195,10 @@
       "terrace": "Costruzione terrazza",
       "painting": "Pittura soggiorno",
       "electrical": "Installazione illuminazione",
-      "furniture": "Montaggio mobili"
+      "furniture": "Montaggio mobili",
+      "cleaning": "Pulizia appartamento",
+      "livingRoom": "Ristrutturazione soggiorno",
+      "plumbing": "Lavori idraulici"
     },
     "locations": {
       "zurich": "Zurigo",
@@ -234,7 +247,7 @@
       "success": "Richiesta inviata!",
       "successDescription": "Ti contatteremo entro 30 minuti."
     },
-    "services": {
+"services": {
       "repair": "Riparazioni generali",
       "painting": "Lavori di pittura",
       "electrical": "Elettricità",
@@ -242,6 +255,7 @@
       "carpentry": "Falegnameria",
       "furniture": "Montaggio mobili",
       "renovation": "Ristrutturazione",
+      "cleaning": "Pulizia appartamento",
       "other": "Altro"
     },
     "map": "La mappa sarà qui"

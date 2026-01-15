@@ -26,7 +26,7 @@
     "title": "Comprehensive Solutions for Your Home",
     "description": "We provide a wide range of home repair and maintenance services. Every project is executed with the highest quality.",
     "viewAll": "All Services",
-    "items": {
+"items": {
       "repair": {
         "title": "General Repairs",
         "description": "Minor and medium home repairs, furniture assembly, shelf and picture hanging"
@@ -62,9 +62,13 @@
       "moving": {
         "title": "Moving Services",
         "description": "Moving assistance: packing, transportation, furniture assembly/disassembly"
+      },
+      "cleaning": {
+        "title": "Apartment Cleaning",
+        "description": "Professional cleaning of apartments of any complexity. Regular and deep cleaning"
       }
     },
-    "features": {
+"features": {
       "ikea": "IKEA Furniture",
       "curtains": "Curtain Installation",
       "shelves": "Shelf Hanging",
@@ -98,7 +102,11 @@
       "packing": "Packing",
       "transport": "Transportation",
       "disassembly": "Disassembly",
-      "assembly": "Assembly on Site"
+      "assembly": "Assembly on Site",
+      "regular": "Regular Cleaning",
+      "deep": "Deep Cleaning",
+      "windows": "Window Cleaning",
+      "postConstruction": "Post-Construction"
     },
     "pricing": {
       "from": "from",
@@ -170,14 +178,16 @@
   "gallery": {
     "title": "Work Gallery",
     "description": "See examples of our projects. Each work is done with attention to detail and Swiss quality.",
-    "categories": {
+"categories": {
       "all": "All",
       "bathrooms": "Bathrooms",
       "kitchens": "Kitchens",
       "terraces": "Terraces",
       "painting": "Painting",
       "electrical": "Electrical",
-      "furniture": "Furniture"
+      "furniture": "Furniture",
+      "cleaning": "Cleaning",
+      "plumbing": "Plumbing"
     },
     "items": {
       "bathroom": "Bathroom Renovation",
@@ -185,7 +195,10 @@
       "terrace": "Terrace Construction",
       "painting": "Living Room Painting",
       "electrical": "Lighting Installation",
-      "furniture": "Furniture Assembly"
+      "furniture": "Furniture Assembly",
+      "cleaning": "Apartment Cleaning",
+      "livingRoom": "Living Room Renovation",
+      "plumbing": "Plumbing Work"
     },
     "locations": {
       "zurich": "Zurich",
@@ -234,7 +247,7 @@
       "success": "Request submitted!",
       "successDescription": "We'll contact you within 30 minutes."
     },
-    "services": {
+"services": {
       "repair": "General Repairs",
       "painting": "Painting Works",
       "electrical": "Electrical",
@@ -242,6 +255,7 @@
       "carpentry": "Carpentry",
       "furniture": "Furniture Assembly",
       "renovation": "Renovation",
+      "cleaning": "Apartment Cleaning",
       "other": "Other"
     },
     "map": "Map will be here"

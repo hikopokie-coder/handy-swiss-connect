@@ -11,8 +11,11 @@ import galleryTerrace from "@/assets/gallery-terrace.jpg";
 import galleryPainting from "@/assets/gallery-painting.jpg";
 import galleryElectrical from "@/assets/gallery-electrical.jpg";
 import galleryFurniture from "@/assets/gallery-furniture.jpg";
+import galleryCleaning from "@/assets/gallery-cleaning.jpg";
+import galleryLivingRoom from "@/assets/gallery-living-room.jpg";
+import galleryPlumbing from "@/assets/gallery-plumbing.jpg";
 
-const categoryKeys = ["all", "bathrooms", "kitchens", "terraces", "painting", "electrical", "furniture"];
+const categoryKeys = ["all", "bathrooms", "kitchens", "terraces", "painting", "electrical", "furniture", "cleaning", "plumbing"];
 
 const galleryItems = [
   { id: 1, image: galleryBathroom, categoryKey: "bathrooms", titleKey: "bathroom", locationKey: "zurich" },
@@ -21,6 +24,9 @@ const galleryItems = [
   { id: 4, image: galleryPainting, categoryKey: "painting", titleKey: "painting", locationKey: "basel" },
   { id: 5, image: galleryElectrical, categoryKey: "electrical", titleKey: "electrical", locationKey: "lausanne" },
   { id: 6, image: galleryFurniture, categoryKey: "furniture", titleKey: "furniture", locationKey: "lucerne" },
+  { id: 7, image: galleryCleaning, categoryKey: "cleaning", titleKey: "cleaning", locationKey: "lugano" },
+  { id: 8, image: galleryLivingRoom, categoryKey: "painting", titleKey: "livingRoom", locationKey: "zug" },
+  { id: 9, image: galleryPlumbing, categoryKey: "plumbing", titleKey: "plumbing", locationKey: "zurich" },
 ];
 
 const Gallery = () => {

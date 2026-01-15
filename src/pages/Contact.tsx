@@ -16,8 +16,9 @@ import {
   MessageSquare
 } from "lucide-react";
 import { toast } from "sonner";
+import { supabase } from "@/integrations/supabase/client";
 
-const serviceKeys = ["repair", "painting", "electrical", "plumbing", "carpentry", "furniture", "renovation", "other"];
+const serviceKeys = ["repair", "painting", "electrical", "plumbing", "carpentry", "furniture", "renovation", "cleaning", "other"];
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -35,22 +36,39 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+    try {
+      const { error } = await supabase.functions.invoke('send-booking-email', {
+        body: {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          service: t(`contact.services.${formData.service}`),
+          date: formData.date,
+          message: formData.message,
+          urgent: false
+        }
+      });
 
-    toast.success(t("contact.form.success"), {
-      description: t("contact.form.successDescription"),
-    });
+      if (error) throw error;
 
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      date: "",
-      message: "",
-    });
-    setIsSubmitting(false);
+      toast.success(t("contact.form.success"), {
+        description: t("contact.form.successDescription"),
+      });
+
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        date: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error('Error sending email:', error);
+      toast.error("Error sending request");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -109,7 +127,7 @@ const Contact = () => {
                     </a>
 
                     <a
-                      href="mailto:info@handyman-swiss.ch"
+                      href="mailto:tiptopch@proton.me"
                       className="flex items-start gap-4 group"
                     >
                       <div className="w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center group-hover:bg-accent transition-colors">
@@ -118,7 +136,7 @@ const Contact = () => {
                       <div>
                         <p className="text-sm text-muted-foreground">{t("contact.info.email")}</p>
                         <p className="font-semibold text-foreground group-hover:text-accent transition-colors">
-                          info@handyman-swiss.ch
+                          tiptopch@proton.me
                         </p>
                       </div>
                     </a>
