@@ -3,11 +3,10 @@ import { useTranslation } from "react-i18next";
 import { Globe, Check } from "lucide-react";
 
 const languages = [
-  { code: "en", name: "English", flag: "🇬🇧" },
   { code: "de", name: "Deutsch", flag: "🇩🇪" },
+  { code: "en", name: "English", flag: "🇬🇧" },
   { code: "fr", name: "Français", flag: "🇫🇷" },
   { code: "it", name: "Italiano", flag: "🇮🇹" },
-  { code: "uk", name: "Українська", flag: "🇺🇦" },
 ];
 
 export const LanguageSwitcher = () => {
