@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ChatWidget } from "@/components/chat/ChatWidget";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { 
@@ -343,7 +342,6 @@ const Contact = () => {
         </section>
       </main>
       <Footer />
-      <ChatWidget />
     </div>
   );
 };
