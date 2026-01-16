@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { Menu, X, Phone, Wrench } from "lucide-react";
+import { Menu, X, Phone, Wrench, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
@@ -57,9 +57,15 @@ export const Navbar = () => {
               <Phone className="w-4 h-4 text-accent" />
               +41 79 123 45 67
             </a>
-            <Button variant="accent" asChild>
-              <Link to="/contact">{t("nav.book")}</Link>
-            </Button>
+            <a
+              href="https://wa.me/41798135147"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center w-10 h-10 rounded-full bg-[#25D366] hover:bg-[#20BD5A] transition-colors shadow-md"
+              aria-label="WhatsApp"
+            >
+              <MessageCircle className="w-5 h-5 text-white" />
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -97,9 +103,16 @@ export const Navbar = () => {
                   <Phone className="w-4 h-4 text-accent" />
                   +41 79 123 45 67
                 </a>
-                <Button variant="accent" className="w-full" asChild>
-                  <Link to="/contact" onClick={() => setIsOpen(false)}>{t("nav.book")}</Link>
-                </Button>
+                <a
+                  href="https://wa.me/41798135147"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsOpen(false)}
+                  className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-[#25D366] hover:bg-[#20BD5A] transition-colors text-white font-medium"
+                >
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp
+                </a>
               </div>
             </div>
           </div>
