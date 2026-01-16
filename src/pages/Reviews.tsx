@@ -1,6 +1,5 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
-import { ChatWidget } from "@/components/chat/ChatWidget";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
@@ -200,7 +199,6 @@ const Reviews = () => {
         </section>
       </main>
       <Footer />
-      <ChatWidget />
     </div>
   );
 };
