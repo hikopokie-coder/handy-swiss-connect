@@ -12,38 +12,38 @@ interface SEOConfig {
 }
 
 const defaultConfig: SEOConfig = {
-  title: "TipTop Service – Ihr Handwerker in Zürich & Schweiz | 24h Notdienst",
-  description: "★ Zuverlässiger Handyman in Zürich: Reparaturen, Renovierung, Elektrik, Sanitär, Malerarbeiten. Faire Preise ✓ Schnelle Termine ✓ 24h Notdienst ✓ ☎ +41 79 813 51 47",
-  keywords: "handwerker zürich, handyman schweiz, renovierung, malerarbeiten, elektrik, sanitär, 24h notdienst",
+  title: "Ремонт Квартир Цюрих | Handwerker Zürich | TipTop Service 24h",
+  description: "★ Ремонт квартир в Цюрихе и Швейцарии. Renovierung, Elektrik, Sanitär, Malerarbeiten. Качественный ремонт под ключ ✓ Доступные цены ✓ 24h Notdienst ✓ ☎ +41 79 813 51 47",
+  keywords: "ремонт квартир цюрих, ремонт квартир швейцария, handwerker zürich, renovierung zürich, wohnungsrenovierung, apartment renovation zurich",
   type: "website",
   image: "https://tiptop-service.ch/og-image.jpg"
 };
 
 const pageConfigs: Record<string, SEOConfig> = {
   "/": {
-    title: "TipTop Service – Ihr Handwerker in Zürich & Schweiz | 24h Notdienst",
-    description: "★ Zuverlässiger Handyman in Zürich: Reparaturen, Renovierung, Elektrik, Sanitär, Malerarbeiten. Faire Preise ✓ Schnelle Termine ✓ 24h Notdienst ✓ Jetzt anfragen: +41 79 813 51 47",
-    keywords: "handwerker zürich, handyman schweiz, renovierung zürich, reparaturservice, hausmeister zürich, 24h notdienst"
+    title: "Ремонт Квартир Цюрих | Handwerker Zürich | TipTop Service 24h",
+    description: "★ Ремонт квартир в Цюрихе и Швейцарии. Renovierung, Elektrik, Sanitär, Malerarbeiten. Ремонт под ключ ✓ Качественно ✓ 24h Notdienst ✓ ☎ +41 79 813 51 47",
+    keywords: "ремонт квартир цюрих, ремонт квартир швейцария, отделка квартир, косметический ремонт, капитальный ремонт, handwerker zürich, renovierung zürich, wohnungsrenovierung, apartment renovation zurich, мастер на час"
   },
   "/services": {
-    title: "Handwerker-Leistungen Zürich | Elektrik, Sanitär, Renovierung – TipTop",
-    description: "Professionelle Handwerkerleistungen in Zürich: Elektrik ⚡ Sanitär 🔧 Malerarbeiten 🎨 Möbelmontage 🪑 Renovierung. Faire Preise, schnelle Termine. Jetzt anfragen!",
-    keywords: "elektriker zürich, sanitär zürich, malerarbeiten zürich, möbelmontage ikea, renovierung zürich, handwerker leistungen"
+    title: "Услуги Ремонта Квартир | Handwerker-Leistungen Zürich | TipTop",
+    description: "Профессиональные услуги ремонта в Цюрихе: Электрика ⚡ Сантехника 🔧 Маляренные работы 🎨 Сборка мебели 🪑 Ремонт под ключ. Доступные цены!",
+    keywords: "услуги ремонта цюрих, электрик цюрих, сантехник цюрих, маляренные работы, сборка мебели ikea, elektriker zürich, sanitär zürich, malerarbeiten zürich"
   },
   "/gallery": {
-    title: "Referenzen & Projekte | Handwerker Zürich – TipTop Service",
-    description: "Unsere abgeschlossenen Projekte: Badezimmer-Renovierung, Küchenmontage, Malerarbeiten, Elektroinstallationen. Überzeugen Sie sich von unserer Qualität!",
-    keywords: "handwerker referenzen, renovierung vorher nachher, badezimmer renovierung zürich, küche montage, projekte handwerker"
+    title: "Портфолио Ремонта Квартир | Referenzen Zürich | TipTop Service",
+    description: "Наши выполненные проекты: ремонт ванной, отделка кухни, маляренные работы, электромонтаж. Убедитесь в нашем качестве!",
+    keywords: "портфолио ремонта, ремонт ванной цюрих, ремонт кухни, отделка квартир фото, badezimmer renovierung zürich, küche montage"
   },
   "/reviews": {
-    title: "Kundenbewertungen ★★★★★ 4.9/5 | TipTop Service Zürich",
-    description: "Über 200 zufriedene Kunden bewerten uns mit 4.9/5 Sternen. Lesen Sie echte Erfahrungsberichte unserer Kunden aus Zürich und der Schweiz.",
-    keywords: "handwerker bewertungen zürich, kundenmeinungen, erfahrungen tiptop service, handwerker empfehlung"
+    title: "Отзывы Клиентов ★★★★★ 4.9/5 | TipTop Service Zürich",
+    description: "Более 200 довольных клиентов оценивают нас на 4.9/5 звезд. Читайте реальные отзывы о ремонте квартир в Цюрихе.",
+    keywords: "отзывы ремонт квартир, отзывы клиентов цюрих, handwerker bewertungen zürich, kundenmeinungen"
   },
   "/contact": {
-    title: "Kontakt & Offerte | Handwerker Zürich – TipTop Service",
-    description: "Kostenlose Beratung & Offerte anfordern. Online-Buchung möglich. Antwort innerhalb 30 Min. ☎ +41 79 813 51 47 oder Formular ausfüllen.",
-    keywords: "handwerker kontakt zürich, offerte anfordern, kostenlose beratung, handwerker buchen online"
+    title: "Заказать Ремонт Квартиры | Kontakt Zürich | TipTop Service",
+    description: "Бесплатная консультация и расчёт стоимости. Онлайн-заявка на ремонт. Ответ в течение 30 минут. ☎ +41 79 813 51 47",
+    keywords: "заказать ремонт квартиры, консультация ремонт цюрих, расчёт стоимости ремонта, handwerker kontakt zürich"
   }
 };
 
