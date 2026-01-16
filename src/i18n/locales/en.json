@@ -220,6 +220,7 @@
       "email": "Email",
       "address": "Address",
       "hours": "Working Hours",
+      "whatsappText": "Write us on WhatsApp",
       "weekdays": "Mon-Fri: 08:00 - 18:00",
       "saturday": "Sat: 09:00 - 14:00"
     },
